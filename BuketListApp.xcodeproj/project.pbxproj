@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		D88466C02770679E00B03F65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88466BF2770679E00B03F65 /* AppDelegate.swift */; };
 		D88466C22770679F00B03F65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88466C12770679E00B03F65 /* SceneDelegate.swift */; };
-		D88466C42770679F00B03F65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88466C32770679F00B03F65 /* ViewController.swift */; };
 		D88466C72770679F00B03F65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88466C52770679F00B03F65 /* Main.storyboard */; };
 		D88466C9277067A200B03F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88466C8277067A200B03F65 /* Assets.xcassets */; };
 		D88466CC277067A200B03F65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88466CA277067A200B03F65 /* LaunchScreen.storyboard */; };
 		D88466D7277067A300B03F65 /* BuketListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88466D6277067A300B03F65 /* BuketListAppTests.swift */; };
 		D88466E1277067A300B03F65 /* BuketListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88466E0277067A300B03F65 /* BuketListAppUITests.swift */; };
 		D88466E3277067A300B03F65 /* BuketListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88466E2277067A300B03F65 /* BuketListAppUITestsLaunchTests.swift */; };
+		D88466F02770688000B03F65 /* BuketListsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88466EF2770688000B03F65 /* BuketListsTableViewController.swift */; };
+		D88466F22770802400B03F65 /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88466F12770802400B03F65 /* AddItemTableViewController.swift */; };
+		D88466F627725E4900B03F65 /* SaveItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88466F527725E4900B03F65 /* SaveItemDelegate.swift */; };
+		D88466F92773050200B03F65 /* dbModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D88466F72773050200B03F65 /* dbModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		D88466BC2770679E00B03F65 /* BuketListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuketListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88466BF2770679E00B03F65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D88466C12770679E00B03F65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D88466C32770679F00B03F65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D88466C62770679F00B03F65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D88466C8277067A200B03F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D88466CB277067A200B03F65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		D88466DC277067A300B03F65 /* BuketListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuketListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88466E0277067A300B03F65 /* BuketListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuketListAppUITests.swift; sourceTree = "<group>"; };
 		D88466E2277067A300B03F65 /* BuketListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuketListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D88466EF2770688000B03F65 /* BuketListsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuketListsTableViewController.swift; sourceTree = "<group>"; };
+		D88466F12770802400B03F65 /* AddItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
+		D88466F527725E4900B03F65 /* SaveItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveItemDelegate.swift; sourceTree = "<group>"; };
+		D88466F82773050200B03F65 /* dbModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dbModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		D88466BE2770679E00B03F65 /* BuketListApp */ = {
 			isa = PBXGroup;
 			children = (
+				D88466F12770802400B03F65 /* AddItemTableViewController.swift */,
 				D88466BF2770679E00B03F65 /* AppDelegate.swift */,
 				D88466C12770679E00B03F65 /* SceneDelegate.swift */,
-				D88466C32770679F00B03F65 /* ViewController.swift */,
+				D88466EF2770688000B03F65 /* BuketListsTableViewController.swift */,
 				D88466C52770679F00B03F65 /* Main.storyboard */,
 				D88466C8277067A200B03F65 /* Assets.xcassets */,
 				D88466CA277067A200B03F65 /* LaunchScreen.storyboard */,
 				D88466CD277067A200B03F65 /* Info.plist */,
+				D88466F72773050200B03F65 /* dbModel.xcdatamodeld */,
+				D88466F527725E4900B03F65 /* SaveItemDelegate.swift */,
 			);
 			path = BuketListApp;
 			sourceTree = "<group>";
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D88466C42770679F00B03F65 /* ViewController.swift in Sources */,
+				D88466F22770802400B03F65 /* AddItemTableViewController.swift in Sources */,
 				D88466C02770679E00B03F65 /* AppDelegate.swift in Sources */,
 				D88466C22770679F00B03F65 /* SceneDelegate.swift in Sources */,
+				D88466F92773050200B03F65 /* dbModel.xcdatamodeld in Sources */,
+				D88466F02770688000B03F65 /* BuketListsTableViewController.swift in Sources */,
+				D88466F627725E4900B03F65 /* SaveItemDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +630,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D88466F72773050200B03F65 /* dbModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D88466F82773050200B03F65 /* dbModel.xcdatamodel */,
+			);
+			currentVersion = D88466F82773050200B03F65 /* dbModel.xcdatamodel */;
+			path = dbModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D88466B42770679E00B03F65 /* Project object */;
 }
